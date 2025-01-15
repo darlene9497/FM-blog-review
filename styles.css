@@ -1,0 +1,76 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray500: hsl(0, 0%, 42%);
+    --gray950: hsl(0, 0%, 7%);
+}
+
+body {
+    background-color: var(--yellow);
+    font-family: "Figtree", serif;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    min-height: 97vh;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 10px 15px 5px var(--gray950);
+    padding: 20px;
+    max-width: 300px;
+    border: 1px solid var(--gray950);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card .category {
+    font-size: 12px;
+    background: var(--yellow);
+    width: max-content;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.card .publish {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.card .title {
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+.card .description {
+    font-size: 14px;
+    color: var(--gray500);
+    margin-top: 10px;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+.card .publisher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .publisher img {
+    width: 35px;
+    height: 35px;
+}
+
+.publisher p {
+    font-weight: bold;
+    font-size: 12px;
+}
